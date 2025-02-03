@@ -61,21 +61,6 @@
             "path": "s4hanacloud/sap/opu/odata/sap/API_SALES_ORDER_SRV"
           }
         }
-      },
-      "northwind": {
-        "kind": "odata",
-        "model": "srv/external/northwind",
-        "[development]": {
-          "credentials": {
-            "url": "https://services.odata.org/V4/Northwind/Northwind.svc"
-          }
-        },
-        "[production]": {
-          "credentials": {
-            "destination": "northwind",
-            "url": "V4/Northwind/Northwind.svc"
-          }
-        }
       }
     },
     "features": {
