@@ -1,13 +1,17 @@
 using {com.sap as my} from '../db/schema';
 
-@path: '/service/fromABAPtoCAPSvcs'
-service SalesService {
+@path: '/cap/services'
+service OrdersService {
 
     @readonly
-    entity MappingCustomers   as projection on my.MappingCustomers;
-
-    @readonly
-    entity S4SalesOrders      as projection on my.S4SalesOrders;
+    entity S4Orders      as projection on my.S4Orders;
 }
+annotate OrdersService with @requires: ['authenticated-user'];
 
-annotate SalesService with @requires: ['authenticated-user'];
+@path: '/cap/products'
+service ProductsService {
+
+    @readonly
+    entity S4Products      as projection on my.S4Products;
+}
+annotate ProductsService with @requires: ['authenticated-user'];

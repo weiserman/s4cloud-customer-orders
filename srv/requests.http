@@ -1,5 +1,2 @@
-### GET Customers
-GET http://localhost:4004/service/fromABAPtoCAPSvcs/Customers
-
 ### GET S4 Sales Orders
-GET http://localhost:4004/service/fromABAPtoCAPSvcs/S4SalesOrders
+GET http://localhost:4004/cap/services/OrdersService/S4Orders
