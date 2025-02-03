@@ -19,7 +19,7 @@ module.exports = async (srv) => {
           "totalAmount",
           "status"
         )
-        .limit(10),
+        .limit(100),
       headers: {
         apikey: process.env.apikey,
         Accept: "application/json",
