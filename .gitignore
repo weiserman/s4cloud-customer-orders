@@ -38,3 +38,4 @@ build/ui-deployer/
 build/dist/
 env/
 *.env
+.env
